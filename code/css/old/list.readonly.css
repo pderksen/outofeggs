@@ -1,0 +1,26 @@
+﻿/* CSS for list page in read-only mode */
+
+/* Replace colors in sections & items to indicate read-only */
+/* For now using jQuery UI theme "Smoothness" */
+
+/* Sections */
+.secBox
+{
+	border-color: #aaaaaa;
+	background-color: #ffffff;
+}
+
+.secHeader 
+{
+	background-color: #cccccc;
+}
+
+.secName 
+{
+	color: #222222;
+}
+
+.itemName
+{
+    color: #222222;
+}

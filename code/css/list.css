@@ -1,0 +1,458 @@
+﻿/* CSS for list page */
+
+/* Box containing list title */
+
+#listTitleBox
+{
+    background-color: #ffffff;
+    border: 10px solid #0b6a95;
+    color: #333333;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 890px; /* 940 - (margin + padding) */
+}
+
+#listTitleBox table
+{
+    width: 100%;
+}
+
+/*
+#listTitleBox table td
+{
+    border: 1px dotted #cccccc;
+}
+*/
+
+#listTitleBox .leftCol
+{
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#listTitleBox .rightCol
+{
+    margin-left: 5px;
+    text-align: right;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* Middle column for read-only lists */
+#listTitleBox .middleCol
+{
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#listTitleBox .middleCol a
+{
+    font-weight: bold;
+}
+
+#listName h2
+{
+    color: #333333;
+    font-size: 18px;
+    margin: 0;
+}
+
+#listName .indicatorText
+{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+a#listRenameLink
+{
+    font-size: 11px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+a#listRenameLink:hover
+{
+    text-decoration: underline;
+}
+
+#listTitleBox .rightCol ul
+{
+    float: right;
+    position: relative;
+}
+
+#listTitleBox .rightCol ul li
+{
+    float: left;
+    /* height: 30px; TODO specify height? */
+    margin-left: 15px;
+}
+
+#listTitleBox .rightCol a
+{
+    color: #333333;
+    text-decoration: none;
+}
+
+#listTitleBox .rightCol a:hover
+{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+.listEditCtrls a.listSave
+{
+    margin-left: 8px;
+}
+
+.listEditCtrls a.listCancel
+{
+    font-size: 11px;
+    margin-left: 8px;    
+}
+
+.listEditCtrls input
+{
+    font-size: 14px;
+    width: 200px;
+}
+
+/* Icon links common properties */
+
+a.iconLink
+{
+    background-repeat: no-repeat;
+    background-position: 0;
+	padding: 0 0 0 20px;
+}
+
+a#helpLink
+{
+    background-image: url(../img/icons/help.png);
+}
+
+a#copyLink
+{
+    background-image: url(../img/icons/page_copy.png);
+}
+
+a#printLink
+{
+    background-image: url(../img/icons/printer.png);
+}
+
+/* Section add buttons */
+
+.secAddButtonsRow
+{
+    text-align: center;
+}
+
+.secAddButtonsRow a
+{
+    margin: 5px 0;
+    padding: 2px 7px;
+}
+
+.secAddButtonsRow a .addIcon
+{
+    background: url(../img/icons/add.png) no-repeat;
+    display: block;
+    line-height: 16px; /* to fit icon */
+    text-indent: 20px;
+}
+
+/* Content area */
+
+.listContent
+{
+    min-height: 500px;
+}
+
+.noSecAddRow.listContent
+{
+    margin-top: 15px;
+}
+
+.listColumn
+{
+    min-height: 300px;
+}
+
+/* Sections */
+
+.secBox
+{
+    margin-bottom: 15px;
+    width: 220px;
+}
+
+.secBoxPlaceholder 
+{ 
+	border: 1px dotted #ffffff;
+    background-color: #0b6a95;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.secTopBorder
+{
+    background: url(../img/list/section-top.png) no-repeat;
+    height: 2px;
+}
+
+.secBottomBorder
+{
+    background: url(../img/list/section-bottom.png) no-repeat;
+    height: 1px;
+}
+
+.secContent
+{
+    /* background: #ededed url(../img/list/section-gradient.png) repeat-x; */
+    /* Use css3 gradient for background (from css3please.com) */
+    background-color: #ffffff;
+    background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+    ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed')";
+    padding: 5px;
+}
+
+.secHeader
+{
+    /* Use css3 gradient for background (from css3please.com) */
+    background-color: #0b6a95;
+    background-image: -moz-linear-gradient(top, #1f6799, #15476a);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1f6799), to(#15476a));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f6799', endColorstr='#15476a'); /* IE6, IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f6799', endColorstr='#15476a')"; /* IE8 */
+    color: #ffffff;
+    height: auto;
+    margin-bottom: 5px;
+    min-height: 1.5em;
+    overflow: hidden;
+    padding: 5px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;	
+    border-radius: 4px;
+}
+
+.secHeaderSortable:hover 
+{
+    cursor: move;
+}
+
+.secName
+{
+    float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	width: 158px;
+}
+
+.secToolbar
+{
+    display: none; /* Start off hidden */
+    position: absolute;
+    right: 6px;
+}
+
+.secToolbar a
+{
+    border: 1px solid transparent;
+    color: #ffffff;
+    float: left;
+    font-size: 11px;
+    padding: 1.2px 4px;
+    text-decoration: none;
+}
+
+.secToolbar a:hover
+{
+    border: 1px solid #ffffff;
+    text-decoration: none;
+}
+
+/* Items */
+
+.itemList 
+{
+    list-style: none outside none;
+    margin: 0;
+    min-height: 10px;
+}
+
+.itemRow
+{
+    background-color: transparent;
+    color: #333333;
+    font-size: 11px;
+    margin: 0;
+    padding: 2px 3px;
+    overflow: hidden;
+}
+
+.itemRowSortable:hover
+{
+    /*
+    background-color: #D6D4C1;
+    background-color: #cccccc;
+    */
+    background-color: #ffcc66; /* light orange */
+    cursor: move;
+}
+
+.itemRowPlaceholder
+{
+    /*
+    background-color: #FFFFCC;
+    background-color: #7bc5df;
+    */
+    background-color: #ccffff; /* light blue */
+    border: 1px dotted #999999;
+    height: 16px;
+    margin-left: 0;
+}
+
+.itemName
+{
+    float: left;
+	width: 100%;
+}
+
+.addItemText
+{
+    font-weight: bold;
+    margin: 0;
+    padding: 1px 5px;
+}
+
+/* Section/item edit form */
+
+/* Addition to .secContent when editable form is in place */
+.secContentEditable
+{
+    /*
+    background-color: #cccccc;
+    */
+    background-color: #ededed;
+    background-image: none;
+}
+
+.secFormBox
+{
+    display: none; /* Start off hidden */
+}
+
+.secFormBox form
+{
+    padding: 5px;
+    font-size: 11px;
+}
+
+.secFormBox fieldset
+{
+    margin-bottom: 0;
+}
+
+.secFormBox label
+{
+    display: block;
+    font-size: 11px;
+    text-align: left;
+}
+
+.secFormBox input[type="text"],
+.secFormBox textarea
+{
+    margin-bottom: 3px;
+    width: 194px;
+}
+
+.secFormBox #itemNames
+{
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.secFormBox a.secCancel
+{
+    font-weight: bold;
+    padding: 2px;
+}
+
+/* Rename list dialog */
+
+#renameListDialog
+{
+    cursor: default;
+    display: none; /* Start off hidden */
+    margin-top: 10px;
+}
+
+#renameListDialog p
+{
+    padding-bottom: 16px;
+}
+
+#renameListDialog h3
+{
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#renameListDialog input#listName
+{
+    font-size: 16px;
+    width: 200px;
+}
+
+#renameListDialog .buttonRow span
+{
+    color: #666666;
+    font-size: 12px;
+}
+
+/* List help box */
+
+#listHelpBox
+{
+    display: none; /* Start off hidden */
+    text-align: center;
+}
+
+.listHelpOuter
+{
+    background-color: #ffffff;
+    background-image: -moz-linear-gradient(top, #ffffff, #ededed);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+    ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed')";
+    border: 1px dotted #999999;
+    color: #333333;
+    display: inline-block;
+    font: 12px/16px Arial, Helvetica, sans-serif;
+    margin: 5px;
+    width: 400px;
+}
+
+.listHelpInner
+{
+    padding: 3px 10px;
+    text-align: left;
+}
+
+.listHelpInner div
+{
+    text-align: center;
+    padding: 5px;
+}

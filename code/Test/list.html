@@ -1,0 +1,1885 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>list page test</title>
+
+    <link href="../css/960/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/960/960.css" rel="stylesheet" type="text/css" />
+    <link href="base.css" rel="stylesheet" type="text/css" />
+    <link href="list.css" rel="stylesheet" type="text/css" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="header" class="container_12">
+    <h1 id="logo" class="grid_4">
+        <a href="#" title="Home">Out of Eggs</a>
+    </h1>
+    <div class="grid_8">
+        <div id="topNavContainer">
+            <div id="topNavLeft">
+                <a href="#">Contact Us</a>
+            </div>
+            <div id="topNavUnderlay">
+                <p>
+                    <a href="#">Your Account</a>&nbsp;&nbsp;|&nbsp;
+                    <a href="#">Log out</a>
+                </p>
+            </div>
+        </div>
+        <div id="listMainNavContainer">
+            <ul id="listMainNav">
+                <li id="listMainNavYourLists"><a href="#">Your Lists</a></li>
+                <li id="listMainNavTopLists"><a href="#">Recommended Lists</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div id="content" class="container_12">
+
+    <div id="listTitleBar" class="grid_12">
+        <table>
+            <tr>
+                <td class="leftCol">
+                    <div id="listName">
+                        <h2><span>The Market - Fresno, CA</span><a id="listRenameLink">Rename</a></h2>
+                    </div>
+                </td>
+                <td class="middleCol">
+                <!--
+                    <div id="sectionAddLabel">
+                        Add new category to column
+                    </div>
+                    <div id="sectionAddLinkBox">
+                        <a id="sectionAddToCol_1" class="colorBtn">1</a>
+                        <a id="sectionAddToCol_2" class="colorBtn">2</a>
+                        <a id="sectionAddToCol_3" class="colorBtn">3</a>
+                        <a id="sectionAddToCol_4" class="colorBtn">4</a>
+                    </div>
+                -->
+                </td>
+                <td class="rightCol">
+                    <ul>
+                        <li><a id="printLink" class="iconLink">Print</a></li>
+                        <li><a id="helpLink" class="iconLink">Help</a></li>
+                        <li>
+                            <select id="moreActionsDropDown" class="dropDownNav">
+                                <option value="">More Actions:</option>
+                                <option value="copy">Copy this list</option>
+                                <option value="email">Email list to yourself</option>
+                                <option value="delete">Delete this list</option>
+                            </select>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <!-- TODO add category row in partial view to repeat in bottom panel? -->
+	<div id="listAboveContent" class="grid_12 sectionAddRow">
+        <div class="grid_3 alpha">
+            <a class="btnAddSection1" title="Add category to this column">Add Category</a>
+        </div>
+        <div class="grid_3">
+            <a class="btnAddSection2" title="Add category to this column">Add Category</a>
+        </div>
+        <div class="grid_3">
+            <a class="btnAddSection3" title="Add category to this column">Add Category</a>
+        </div>
+        <div class="grid_3 omega">
+            <a class="btnAddSection4" title="Add category to this column">Add Category</a>
+        </div>	
+	</div>
+
+    <div class="clear"></div>    
+	
+	<div id="listContent" class="grid_12">
+	
+	</div>
+
+    <div class="clear"></div>
+
+    <div id="bottomPanel" class="grid_12 sectionAddRow">
+        <div class="grid_3 alpha">
+            <a class="btnAddSection1" title="Add category to this column">Add Category</a>
+        </div>
+        <div class="grid_3">
+            <a class="btnAddSection2" title="Add category to this column">Add Category</a>
+        </div>
+        <div class="grid_3">
+            <a class="btnAddSection3" title="Add category to this column">Add Category</a>
+        </div>
+        <div class="grid_3 omega">
+            <a class="btnAddSection4" title="Add category to this column">Add Category</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+<div id="footer" class="container_12">
+    <div id="footerNavLeft" class="grid_6">
+        <a href="#">Home</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">About Us</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">Contact Us</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">Feedback</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">Tour</a>&nbsp;&nbsp;|&nbsp;
+        <a href="#">Blog</a>
+    </div>
+    <div id="footerNavRight" class="grid_6">
+        <a class="hasIcon facebook" href="http://www.facebook.com/pages/Out-of-Eggs/165685324187">Find us on Facebook</a>
+        <a class="hasIcon twitter" href="http://twitter.com/outofeggs">Follow us on Twitter</a>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div id="footerBottom" class="grid_12">
+        <div id="copyright">
+            &copy; 2010 Out of Eggs. All rights reserved.
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+</body>
+</html>
+
+    <!-- BEGIN LIST CONTENT -->
+    
+    <!--
+
+    <div id="col_1" class="grid_3 alpha listColumn ui-sortable">
+
+    <div id="section_1256" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Vegetables</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_26576" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Carrots
+            
+        </span>
+    </li>
+
+
+    <li id="item_26577" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Broccoli
+            
+        </span>
+    </li>
+
+
+    <li id="item_26578" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Lettuce
+            
+        </span>
+    </li>
+
+
+    <li id="item_26579" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Zucchini
+            
+        </span>
+    </li>
+
+
+    <li id="item_26580" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Tomatoes
+            
+        </span>
+    </li>
+
+
+    <li id="item_26581" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_26582" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_26583" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1256">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Vegetables" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1257" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Breads</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7001" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Sandwich loaf
+            
+        </span>
+    </li>
+
+
+    <li id="item_7002" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Tortillas
+            
+        </span>
+    </li>
+
+
+    <li id="item_7003" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Bagels
+            
+        </span>
+    </li>
+
+
+    <li id="item_7004" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Muffins
+            
+        </span>
+    </li>
+
+
+    <li id="item_7005" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7006" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7007" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1257">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Breads" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1255" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Fruits</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_6986" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Apples
+            
+        </span>
+    </li>
+
+
+    <li id="item_6987" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Oranges
+            
+        </span>
+    </li>
+
+
+    <li id="item_6988" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Grapes
+            
+        </span>
+    </li>
+
+
+    <li id="item_6989" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Bananas
+            
+        </span>
+    </li>
+
+
+    <li id="item_6990" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_6991" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_6992" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1255">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Fruits" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1258" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Snacks</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7008" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Chips
+            
+        </span>
+    </li>
+
+
+    <li id="item_7009" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Crackers
+            
+        </span>
+    </li>
+
+
+    <li id="item_7010" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Granola bars
+            
+        </span>
+    </li>
+
+
+    <li id="item_7011" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Peanuts
+            
+        </span>
+    </li>
+
+
+    <li id="item_7012" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Popcorn
+            
+        </span>
+    </li>
+
+
+    <li id="item_7013" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Raisins
+            
+        </span>
+    </li>
+
+
+    <li id="item_7014" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7015" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7016" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1258">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Snacks" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+        </div>
+
+    <div id="col_2" class="grid_3 listColumn ui-sortable">
+            
+
+    <div id="section_1260" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Frozen Foods</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7024" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Chicken breasts
+            
+        </span>
+    </li>
+
+
+    <li id="item_7025" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Pizza
+            
+        </span>
+    </li>
+
+
+    <li id="item_7026" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Waffles
+            
+        </span>
+    </li>
+
+
+    <li id="item_7027" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Ice cream
+            
+        </span>
+    </li>
+
+
+    <li id="item_7028" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Frozen meals
+            
+        </span>
+    </li>
+
+
+    <li id="item_7029" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7030" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7031" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1260">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Frozen Foods" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1262" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Beverages</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7040" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Juice
+            
+        </span>
+    </li>
+
+
+    <li id="item_7041" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Iced tea
+            
+        </span>
+    </li>
+
+
+    <li id="item_7042" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Soda
+            
+        </span>
+    </li>
+
+
+    <li id="item_7043" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Coffee
+            
+        </span>
+    </li>
+
+
+    <li id="item_7044" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Wine
+            
+        </span>
+    </li>
+
+
+    <li id="item_7045" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7046" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7047" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1262">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Beverages" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1264" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Condiments</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7056" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Ketchup
+            
+        </span>
+    </li>
+
+
+    <li id="item_7057" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Mustard
+            
+        </span>
+    </li>
+
+
+    <li id="item_7058" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Mayonnaise
+            
+        </span>
+    </li>
+
+
+    <li id="item_7059" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Peanut butter
+            
+        </span>
+    </li>
+
+
+    <li id="item_7060" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Jelly
+            
+        </span>
+    </li>
+
+
+    <li id="item_7061" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7062" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7063" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1264">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Condiments" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1267" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Cereal</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7076" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Corn flakes
+            
+        </span>
+    </li>
+
+
+    <li id="item_7077" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Rice krispies
+            
+        </span>
+    </li>
+
+
+    <li id="item_7078" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Bran chex
+            
+        </span>
+    </li>
+
+
+    <li id="item_7079" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Oatmeal
+            
+        </span>
+    </li>
+
+
+    <li id="item_7080" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Granola
+            
+        </span>
+    </li>
+
+
+    <li id="item_7081" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7082" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7083" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1267">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Cereal" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+        </div>
+
+    <div id="col_3" class="grid_3 listColumn ui-sortable">
+            
+
+    <div id="section_1259" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Canned Goods</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7017" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Tuna
+            
+        </span>
+    </li>
+
+
+    <li id="item_7018" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Beans
+            
+        </span>
+    </li>
+
+
+    <li id="item_7019" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Tomato sauce
+            
+        </span>
+    </li>
+
+
+    <li id="item_7020" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Soup
+            
+        </span>
+    </li>
+
+
+    <li id="item_7021" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7022" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7023" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1259">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Canned Goods" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1263" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Baking Goods</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7048" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Flour
+            
+        </span>
+    </li>
+
+
+    <li id="item_7049" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Sugar
+            
+        </span>
+    </li>
+
+
+    <li id="item_7050" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Vanilla
+            
+        </span>
+    </li>
+
+
+    <li id="item_7051" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Pancake mix
+            
+        </span>
+    </li>
+
+
+    <li id="item_7052" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Chocolate chips
+            
+        </span>
+    </li>
+
+
+    <li id="item_7053" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7054" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7055" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1263">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Baking Goods" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1265" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Deli &amp; Cheese</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7064" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Sliced turkey
+            
+        </span>
+    </li>
+
+
+    <li id="item_7065" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Sliced ham
+            
+        </span>
+    </li>
+
+
+    <li id="item_7066" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Cheddar slices
+            
+        </span>
+    </li>
+
+
+    <li id="item_7067" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Grated mozzarella
+            
+        </span>
+    </li>
+
+
+    <li id="item_7068" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Pickles
+            
+        </span>
+    </li>
+
+
+    <li id="item_7069" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7070" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7071" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1265">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Deli &amp; Cheese" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1266" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Pasta</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7072" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Spaghetti noodles
+            
+        </span>
+    </li>
+
+
+    <li id="item_7073" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Macaroni &amp; cheese
+            
+        </span>
+    </li>
+
+
+    <li id="item_7074" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7075" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1266">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Pasta" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+        </div>
+
+    <div id="col_4" class="grid_3 omega listColumn ui-sortable">
+            
+
+    <div id="section_1268" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Pet Supplies</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7109" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Dog food
+            
+        </span>
+    </li>
+
+
+    <li id="item_7110" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Cat food
+            
+        </span>
+    </li>
+
+
+    <li id="item_7111" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Cat litter
+            
+        </span>
+    </li>
+
+
+    <li id="item_7112" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7113" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1268">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Pet Supplies" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1261" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Dairy</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7032" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Milk
+            
+        </span>
+    </li>
+
+
+    <li id="item_7033" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Eggs
+            
+        </span>
+    </li>
+
+
+    <li id="item_7034" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Yogurt
+            
+        </span>
+    </li>
+
+
+    <li id="item_7035" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Butter
+            
+        </span>
+    </li>
+
+
+    <li id="item_7036" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Cream cheese
+            
+        </span>
+    </li>
+
+
+    <li id="item_7038" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7087" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7039" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1261">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Dairy" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1269" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">House &amp; Bathroom</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7089" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Dishwasher detergent
+            
+        </span>
+    </li>
+
+
+    <li id="item_7090" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Dish soap
+            
+        </span>
+    </li>
+
+
+    <li id="item_7091" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Hand soap
+            
+        </span>
+    </li>
+
+
+    <li id="item_7092" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Napkins
+            
+        </span>
+    </li>
+
+
+    <li id="item_7093" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Paper towels
+            
+        </span>
+    </li>
+
+
+    <li id="item_7094" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Garbage bags
+            
+        </span>
+    </li>
+
+
+    <li id="item_7095" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Plastic bags
+            
+        </span>
+    </li>
+
+
+    <li id="item_7096" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Plastic wrap
+            
+        </span>
+    </li>
+
+
+    <li id="item_7097" class="itemRow itemRowSortable">
+        <span class="itemName">
+            Aluminum foil
+            
+        </span>
+    </li>
+
+
+    <li id="item_7098" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7099" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7100" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1269">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="House &amp; Bathroom" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+
+    <div id="section_1270" class="secBox">
+
+        <div class="secHeader secHeaderSortable">
+            <h2 class="secName">Misc</h2>
+            <div class="secToolbar" style="display: block;">
+                <a title="Edit this category and it's items" class="secEdit">Edit</a>
+                <a title="Delete this category" class="secDelete">X</a>
+            </div>
+        </div>
+
+        <div class="itemBox">
+            
+                <ul class="itemList ui-sortable">
+                    
+
+    <li id="item_7101" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7102" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7103" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7104" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7105" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7106" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7107" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+
+    <li id="item_7108" class="itemRow itemRowSortable">
+        <span class="itemName">
+            
+                _________________________
+            
+        </span>
+    </li>
+
+                </ul>
+            
+        </div>
+
+        <div class="secFormBox">
+            <form method="post" action="/Section/EditNameAndItems/1270">
+                <fieldset>
+                    <p>
+                        <label for="sectionName">Category Name</label>
+                        <input type="text" value="Misc" name="sectionName" maxlength="50" id="sectionName">
+                    </p>
+                    <p>
+                        <label for="itemNames">
+                            Items (one per line)
+                        </label>
+                        <textarea rows="2" name="itemNames" id="itemNames" cols="20"></textarea>
+                    </p>
+                    <div class="secEditButtonRow">
+                        <button type="submit" class="secSave colorBtn smallBtn">Save</button>
+                        &nbsp;or
+                        <a class="secCancel">Cancel</a>
+                    </div>
+                </fieldset>
+            </form>        
+        </div>
+    </div>
+
+    </div>
+    
+    -->
+    
+    <!-- END LIST CONTENT -->
+    

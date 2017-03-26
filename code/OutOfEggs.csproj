@@ -1,0 +1,377 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C45C883D-4A46-409A-971C-DF993182F819}</ProjectGuid>
+    <ProjectTypeGuids>{603c0e0b-db56-11dc-be95-000d561079b0};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OutOfEggs</RootNamespace>
+    <AssemblyName>OutOfEggs</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah, Version=1.1.11517.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\IsPostedFromThisSiteAttribute.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemController.cs" />
+    <Compile Include="Controllers\ListController.cs" />
+    <Compile Include="Controllers\MobileAppController.cs" />
+    <Compile Include="Controllers\MobileWebController.cs" />
+    <Compile Include="Controllers\SectionController.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\MembershipHelper.cs" />
+    <Compile Include="Helpers\MiscUtils.cs" />
+    <Compile Include="Helpers\MobileUtils.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
+    <Compile Include="Models\ItemRepository.cs" />
+    <Compile Include="Models\ListRepository.cs" />
+    <Compile Include="Models\OutOfEggs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutOfEggs.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SectionRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\TestEmail.aspx.cs">
+      <DependentUpon>TestEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TestEmail.aspx.designer.cs">
+      <DependentUpon>TestEmail.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <None Include="Test\test1.html" />
+    <None Include="Test\TestEmail.aspx" />
+    <Content Include="Views\Account\ForgotPassword.aspx" />
+    <Content Include="Views\Account\Login.aspx" />
+    <Content Include="Views\Account\Profile.aspx" />
+    <Content Include="Views\Account\Settings.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Item\Details.aspx" />
+    <Content Include="Views\List\Create.aspx" />
+    <Content Include="Views\List\Delete.aspx" />
+    <Content Include="Views\List\Details.aspx" />
+    <Content Include="Views\List\Index.aspx" />
+    <Content Include="Views\List\Top.aspx" />
+    <Content Include="Views\List\Print.aspx" />
+    <Content Include="Views\Section\Details.aspx" />
+    <Content Include="Views\Shared\FlashMsg.ascx" />
+    <Content Include="Views\Shared\MainHeader.ascx" />
+    <None Include="Web.config" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\OutOfEggs.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>OutOfEggs.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\OutOfEggs.dbml.layout">
+      <DependentUpon>OutOfEggs.dbml</DependentUpon>
+    </None>
+    <Content Include="bin\Elmah.dll" />
+    <None Include="Test\tumblr style drop down menu.htm" />
+    <Content Include="bin\Microsoft.Web.Mvc.dll" />
+    <Content Include="css\960\960.css" />
+    <Content Include="css\960\reset.css" />
+    <Content Include="css\960\text.css" />
+    <None Include="css\960\uncompressed\960.css" />
+    <None Include="css\960\uncompressed\reset.css" />
+    <None Include="css\960\uncompressed\text.css" />
+    <None Include="css\old\awesome-buttons2.css" />
+    <None Include="css\old\awesome-buttons.css" />
+    <Content Include="css\alert-overlay.png" />
+    <Content Include="css\base.css" />
+    <Content Include="css\mobile_iPhone.css" />
+    <None Include="css\mobile_plain.css" />
+    <Content Include="img\list\section-bottom.png" />
+    <Content Include="img\list\section-gradient.png" />
+    <Content Include="img\list\section-title-top.png" />
+    <Content Include="img\list\section-top.png" />
+    <Content Include="img\misc\tour1.png" />
+    <Content Include="img\misc\tour2.png" />
+    <Content Include="img\misc\tour3.png" />
+    <Content Include="img\misc\tour4.png" />
+    <Content Include="img\misc\tour5.png" />
+    <Content Include="img\misc\tour6.png" />
+    <Content Include="js\ie6\ie6.html" />
+    <Content Include="js\ie6\ie6.js" />
+    <Content Include="js\mobile_iPhone.js" />
+    <Content Include="js\plugins\jquery.elastic.min.js" />
+    <None Include="Test\base.css" />
+    <None Include="css\hideImages.css" />
+    <Content Include="css\fluid960\grid.css" />
+    <Content Include="css\fluid960\ie.css" />
+    <Content Include="css\fluid960\ie6.css" />
+    <Content Include="css\fluid960\layout.css" />
+    <Content Include="css\fluid960\nav.css" />
+    <Content Include="css\home.css" />
+    <Content Include="css\list.css" />
+    <None Include="css\list.ie7.css" />
+    <None Include="css\old\list.readonly.css" />
+    <None Include="Test\list.css" />
+    <None Include="css\old\unused.css" />
+    <None Include="css\old\ooe.base.css" />
+    <None Include="css\old\ooe.list.css" />
+    <None Include="css\old\ooe.main.css" />
+    <Content Include="css\other.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\printExtras.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="img\home\background-column-left.png" />
+    <Content Include="img\home\background-column-middle.png" />
+    <Content Include="img\home\background-column-right.png" />
+    <Content Include="img\home\btn-signup.gif" />
+    <Content Include="img\home\img-main.png" />
+    <Content Include="img\home\nav-main.png" />
+    <Content Include="img\home\quote-left.png" />
+    <Content Include="img\home\quote-right.png" />
+    <Content Include="img\icons\add.png" />
+    <Content Include="img\icons\facebook16.png" />
+    <Content Include="img\icons\facebook24.png" />
+    <Content Include="img\icons\feed16.png" />
+    <Content Include="img\icons\feed24.png" />
+    <Content Include="img\icons\help.png" />
+    <Content Include="img\icons\key.png" />
+    <Content Include="img\icons\page_copy.png" />
+    <Content Include="img\icons\printer.png" />
+    <Content Include="img\icons\twitter16.png" />
+    <Content Include="img\icons\twitter24.png" />
+    <Content Include="img\list\btn-close.gif" />
+    <Content Include="img\list\nav-list.png" />
+    <Content Include="img\misc\gradient-tile.png" />
+    <Content Include="img\misc\indicator.gif" />
+    <Content Include="img\misc\login-account-underlay.png" />
+    <Content Include="img\misc\logo-main.png" />
+    <Content Include="img\misc\logo-print.png" />
+    <Content Include="img\misc\ooe-avatar.png" />
+    <Content Include="img\misc\phil-avatar.jpg" />
+    <None Include="img\old\list_corner_1.png" />
+    <None Include="img\old\screenshot_home_main.png" />
+    <None Include="img\old\screenshot_home_step1.png" />
+    <None Include="img\old\screenshot_home_step2.png" />
+    <None Include="img\old\screenshot_home_step3.png" />
+    <None Include="img\old\tour1.png" />
+    <None Include="img\old\tour2.png" />
+    <None Include="img\old\tour3_4.png" />
+    <None Include="img\old\tour5.png" />
+    <None Include="img\old\tour6.png" />
+    <None Include="img\old\tour7_8.png" />
+    <Content Include="js\base.js" />
+    <Content Include="js\changePassword.js" />
+    <Content Include="js\forgotPassword.js" />
+    <Content Include="js\list.create.js" />
+    <Content Include="js\list.delete.js" />
+    <Content Include="js\list.index.js" />
+    <Content Include="js\other.js" />
+    <Content Include="js\plugins\jquery.tools.min.js" />
+    <Content Include="js\recentTweets.js" />
+    <Content Include="js\register.js" />
+    <Content Include="js\list.base.js" />
+    <Content Include="js\list.editable.js" />
+    <Content Include="js\list.readonly.js" />
+    <None Include="js\old\unused.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\plugins\jquery.blockUI.js" />
+    <Content Include="js\plugins\jquery.cookie.js" />
+    <None Include="js\plugins\jquery.elastic.js" />
+    <Content Include="js\plugins\jquery.form.js" />
+    <None Include="js\plugins\jquery.jeditable.js" />
+    <Content Include="js\plugins\jquery.jeditable.min.js" />
+    <Content Include="js\plugins\jquery.livequery.js" />
+    <None Include="js\plugins\jquery.scrollTo.js" />
+    <Content Include="js\plugins\jquery.scrollTo.min.js" />
+    <Content Include="js\plugins\jquery.twitter.js" />
+    <None Include="Test\home.html" />
+    <None Include="Test\list.html" />
+    <None Include="Test\print.html" />
+    <Content Include="js\tour.js" />
+    <None Include="Test\test2.html" />
+    <None Include="Test\test2.css" />
+    <Content Include="MobileAppShell\ajax.html" />
+    <Content Include="MobileAppShell\index.html" />
+    <Content Include="MobileAppShell\jqtouch\jqtouch.css" />
+    <Content Include="MobileAppShell\jqtouch\jqtouch.js" />
+    <Content Include="MobileAppShell\jqtouch\jqtouch.min.css" />
+    <Content Include="MobileAppShell\jqtouch\jqtouch.min.js" />
+    <Content Include="MobileAppShell\jqtouch\jqtouch.transitions.js" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\actionButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\backButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\blueButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\cancel.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\chevron.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\grayButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\greenButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\listArrowSel.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\listGroup.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\loading.gif" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\on_off.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\pinstripes.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\redButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\selection.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\thumb.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\toggle.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\toggleOn.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\toolbar.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\toolButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\img\whiteButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\theme.css" />
+    <Content Include="MobileAppShell\jqtouch\themes\apple\theme.min.css" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\activeButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\back_button.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\back_button_clicked.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\blueButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\button.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\button_clicked.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\chevron.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\chevron_circle.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\grayButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\greenButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\loading.gif" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\on_off.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\redButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\rowhead.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\toggle.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\toggleOn.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\toolbar.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\img\whiteButton.png" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\theme.css" />
+    <Content Include="MobileAppShell\jqtouch\themes\jqt\theme.min.css" />
+    <Content Include="MobileAppShell\main.css" />
+    <Content Include="MobileAppShell\main.js" />
+    <Content Include="Views\Home\Contact.aspx" />
+    <Content Include="Views\Home\Privacy.aspx" />
+    <Content Include="Views\Home\Terms.aspx" />
+    <Content Include="Views\List\SectionAddButtons.ascx" />
+    <None Include="Views\MobileWeb\Index.aspx" />
+    <Content Include="Views\MobileApp\TopLists.ascx" />
+    <Content Include="Views\MobileWeb\iPhone.aspx" />
+    <Content Include="Views\Shared\IE6upgrade.ascx" />
+    <Content Include="Views\Shared\Other.Master" />
+    <Content Include="Views\Shared\SingleItem.ascx" />
+    <Content Include="Views\List\SingleListSummary.ascx" />
+    <Content Include="Views\Shared\SingleSection.ascx" />
+    <Content Include="Views\Shared\SingleSectionPrint.ascx" />
+    <Content Include="Views\Home\Tour.aspx" />
+    <Content Include="Views\List\ColumnContent.ascx" />
+    <Content Include="Views\List\ListHeader.ascx" />
+    <Content Include="Views\List\ListHeader2.ascx" />
+    <Content Include="Views\List\ListHelp.ascx" />
+    <Content Include="Views\List\UserLists.ascx" />
+    <Content Include="Views\Shared\FlashMsgFade.ascx" />
+    <Content Include="Views\Shared\GoogleTrackingCode.ascx" />
+    <Content Include="Views\Shared\MainFooter.ascx" />
+    <Content Include="Views\Shared\RecentBlogPosts.ascx" />
+    <Content Include="Views\Shared\RecentTweets.ascx" />
+    <Content Include="Views\Shared\SignUpFooter1.ascx" />
+    <Content Include="Views\Shared\SignUpFooter2.ascx" />
+    <Content Include="Views\Shared\SignUpSmall.ascx" />
+    <Content Include="Views\Shared\TopNav.ascx" />
+    <Content Include="Views\Shared\UserVoiceFeedbackCode.ascx" />
+    <Content Include="Web.config.prod" />
+    <Content Include="Web.config.test" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MobileAppShell\img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1253</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

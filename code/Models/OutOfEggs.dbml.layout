@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="OutOfEggs">
+  <DataContextMoniker Name="/OutOfEggsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bc0865a3-035a-41da-b4f7-b5a678fca1cb" absoluteBounds="2, 2.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/OutOfEggsDataContext/Section" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26e34c06-6949-47e6-8f1c-c506e8957df5" absoluteBounds="2.015, 3.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c3c21a5-0cc4-4fa7-aa48-d9522a69150f" absoluteBounds="2, 5.125, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/OutOfEggsDataContext/Item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2beaedd-299a-4d32-9d23-915b0cf7c3af" absoluteBounds="2.015, 5.585, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 4.33919514973958); (3 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/OutOfEggsDataContext/Section/Section_Item" />
+      <nodes>
+        <classShapeMoniker Id="bc0865a3-035a-41da-b4f7-b5a678fca1cb" />
+        <classShapeMoniker Id="8c3c21a5-0cc4-4fa7-aa48-d9522a69150f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="66bc18ca-c100-4ab1-9d51-6d70c2aa1d79" absoluteBounds="2, 0.75, 2, 1.26050048828125">
+      <DataClassMoniker Name="/OutOfEggsDataContext/List" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc53a457-fdc9-4d4d-b48c-098d464ba51b" absoluteBounds="2.015, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 2.01050048828125); (3 : 2.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/OutOfEggsDataContext/List/List_Section" />
+      <nodes>
+        <classShapeMoniker Id="66bc18ca-c100-4ab1-9d51-6d70c2aa1d79" />
+        <classShapeMoniker Id="bc0865a3-035a-41da-b4f7-b5a678fca1cb" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

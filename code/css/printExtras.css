@@ -1,0 +1,7 @@
+﻿/* CSS to remove elements from print page when actually printing */
+
+#printNavLinkBox,
+#printNavLinkBox2
+{
+    display: none;
+}

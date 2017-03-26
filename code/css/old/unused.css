@@ -1,0 +1,464 @@
+﻿/* menu drop-down attempt */
+
+.dropDownNav
+{
+    background-color: #ffffff;
+    border: 1px solid #e0cfc2;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+
+.dropDownNav a
+{
+    border-bottom: 1px solid #e0cfc2;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.dropDownNav a:hover
+{
+    text-decoration: underline;
+}
+
+.dropDownNav a:last-child
+{
+    border-bottom: none;
+}
+
+
+#flashMsg
+{
+    display: none;
+}
+
+#flashMsg table
+{
+    background-color: #f9f9d6;
+    border-bottom: 1px solid #d9bb73;
+    color: #060200;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+#flashMsg table td
+{
+    padding: 5px 0;
+    text-align: center;
+}
+
+td.flashMsgText
+{
+    width: 95%;
+}
+
+td.flashMsgClose a
+{
+    background-color: #cd802a;
+    _border: 2px solid #060200;
+    _border: 2px solid #cd802a;
+    _color: #060200;
+    _color: #cd802a;    
+    color: #FFFFFF;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+td.flashMsgClose a:hover
+{
+    background-color: #AC6B23;
+    _border: 2px solid #AC6B23;
+    color: #FFFFFF;
+}
+
+
+#introMain .leftCol
+{
+    padding: 10px 20px 10px 10px;
+    width: auto;
+}
+
+#introMain .rightCol
+{
+    text-align: right;
+    width: 250px;
+}
+
+#introMain h1
+{
+    font-size: 35px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+#introMain h2
+{
+    color: #555555;
+    font-size: 22px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+#introMain h2 strong
+{
+    _color: #50473e;
+    color: #000000;
+    font-style: italic;
+}
+
+table#signupRow
+{
+    width: auto;
+    font-weight: bold;
+}
+
+table#signupRow td
+{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+#listIndex .leftCol
+{
+    width: 50%;
+}
+
+#listIndex .rightCol
+{
+    width: 50%;
+}
+
+#listIndex .singleCol
+{
+    width: 100%;
+}
+
+
+.itemToolbar 
+{
+    display: none; /* Start off hidden */
+    float: right;
+    right: 0.5em;
+    /* Toolbar buttons should hover over long text.
+    .itemToolbar should have position: absolute.
+    .itemRow should have position: relative. */
+    position: absolute;
+}
+
+.itemEditCtrls input
+{
+    font-size: 12px;
+    width: 100px;
+}
+
+.itemAddLinkBox
+{
+    margin-top: 5px;
+    padding: 0.1em 0.5em;
+    text-align: right;
+}
+
+.itemAddLinkBox a
+{
+    font-size: 12px;
+    font-weight: bold;
+	background: url(famfam/add.png) no-repeat left;
+	padding-left: 20px;
+}
+
+.itemAddFormBox
+{
+    display: none; /* Start off hidden */
+    margin: 4px;
+}
+
+.itemAddFormBox input
+{
+    font-size: 12px;
+    width: 100px;
+    margin-bottom: 4px;
+}
+
+.itemAddCtrls
+{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#navTop a.loginLink
+{
+	background: url(famfam/key.png) no-repeat left;
+	padding-left: 20px;
+}
+
+
+a.copyLink
+{
+    background-image: url(famfam/page_copy.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+	padding: 7px 10px 7px 32px;
+}
+
+a.copyLink .icon
+{
+    background: url(famfam/page_copy.png) no-repeat left;
+	padding-left: 20px;
+}
+
+
+#listHeader
+{
+    background-color: #cd802a;
+    margin-bottom: 10px;
+    padding: 4px 0;
+    color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;    
+}
+
+#listHeader a
+{
+    color: #FFFFFF;
+}
+
+#listHeader a:hover
+{
+    color: #50473e;
+    text-decoration: none;
+}
+
+#listHeaderLeft
+{
+    float: left;
+    padding-left: 10px
+}
+
+#listHeaderRight
+{
+    float: right;
+    text-align: right;
+    padding-right: 10px
+}
+
+#listHeaderRight a
+{
+    margin-left: 10px;
+    padding: 5px 8px;
+}
+
+a#printLink
+{
+	background: url(famfam/printer.png) no-repeat left;
+	padding-left: 20px;
+}
+
+
+.box1
+{
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    padding: 10px 20px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.box1 table
+{
+    width: 100%;
+}
+
+.box1 td
+{
+    vertical-align: top;
+}
+
+.box1 td.leftCol
+{
+    padding-right: 5px;
+}
+
+.box1 td.rightCol
+{
+    padding-left: 5px;
+}
+
+
+#navTop > li.last
+{
+    padding: 0;
+}
+
+#navTop > li.last > a.more
+{
+    display: block;
+    padding: 3px 10px;
+}
+
+#navTop > li > a.more:hover,
+#navTop > li > a.selected
+{
+	background-color: #d6d4c1;
+	text-decoration: none;
+}
+
+#navTop > li ul
+{
+    background-color: #d6d4c1;
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 90;
+}
+
+#navTop > li ul li
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#navTop > li ul li a
+{
+    display: block;
+    padding: 5px 10px;
+}
+
+
+/*  == 960gs modification ==
+    == 10 columns, 780px width
+    == TODO removing for now
+*/
+
+.container_10
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+.container_10 .grid_1
+{
+	width: 60px;
+}
+
+.container_10 .grid_2
+{
+	width: 140px;
+}
+
+.container_10 .grid_3
+{
+	width: 220px;
+}
+
+.container_10 .grid_4
+{
+	width: 300px;
+}
+
+.container_10 .grid_5
+{
+	width: 380px;
+}
+
+.container_10 .grid_6
+{
+	width: 460px;
+}
+
+.container_10 .grid_7
+{
+	width: 540px;
+}
+
+.container_10 .grid_8
+{
+	width: 620px;
+}
+
+.container_10 .grid_9
+{
+	width: 700px;
+}
+
+.container_10 .grid_10
+{
+	width: 780px;
+}
+
+
+.colorBtn3
+{
+    background-color: #9A4444;
+    _background-color: #164464;
+    _background-color: #5D080A;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.colorBtn3:hover
+{
+    background-color: #EA292C;
+    _background-color: #FF9900;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.colorBtn4
+{
+    background-color: #50473e;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.colorBtn4:hover
+{
+    background-color: #50473e;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Tour */
+
+.tourStepNum
+{
+	display: inline;
+	float: left;
+	width: 30px;
+	margin-right: 5px;
+}
+
+.tourStepNum span
+{
+    background-color: #666666;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 4px 8px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.tourText
+{
+	display: inline;
+	float: left;
+	width: 415px;
+}
+
+.tourScreenshot
+{
+    border: 1px solid #cccccc;
+    margin-bottom: 50px;
+}

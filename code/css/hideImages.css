@@ -1,0 +1,8 @@
+﻿/* Hide images */
+
+#logo a,
+#homeSection1
+{
+    background-color: lightgray;
+    background-image: none;
+}

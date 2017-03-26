@@ -1,0 +1,203 @@
+﻿/* CSS for list page */
+
+#listMainNavContainer
+{
+    float: right;
+    padding: 50px 0 10px 0;
+}
+
+#listMainNav li
+{
+    float: left;
+}
+
+#listMainNav li a
+{
+    background: url(../img/list/nav-list.png) no-repeat;
+    display: block;
+    height: 28px;
+    margin-left: 24px;
+    text-indent: -9999px; /* hide text links */
+}
+
+li#listMainNavYourLists a
+{
+    background-position: 0px 0px;
+    width: 101px;
+}
+
+li#listMainNavYourLists a:hover
+{
+    background-position: 0px -28px;
+}
+
+li#listMainNavTopLists a
+{
+    background-position: -125px 0px;
+    width: 168px;
+}
+
+li#listMainNavTopLists a:hover
+{
+    background-position: -125px -28px;
+}
+
+/* Title bar */
+
+#listTitleBar
+{
+    background-color: #ffffff;
+    border: 10px solid #0b6a95; /* TODO correct color? */
+    color: #333333;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    padding: 15px;
+    width: 890px; /* 940 - (margin + padding) */
+}
+
+#listTitleBar table
+{
+    width: 100%;
+}
+
+#listTitleBar .leftCol,
+#listTitleBar .middleCol,
+#listTitleBar .rightCol
+{
+    vertical-align: middle;
+}
+
+#listTitleBar .leftCol
+{
+    _width: 445px;
+    width: 50%;
+}
+
+#listTitleBar .middleCol
+{
+    _width: 300px;
+    display: none;
+}
+
+#listTitleBar .rightCol
+{
+    _width: 445px;
+    width: 50%;
+}
+
+#listName h2
+{
+    color: #333333;
+    font-size: 18px;
+}
+
+a#listRenameLink
+{
+    font-size: 11px;
+    padding: 3px 5px;
+}
+
+/*
+#sectionAddLabel
+{
+    float: left;
+}
+
+#sectionAddLinkBox
+{
+    float: left;
+}
+*/
+
+#listTitleBar .rightCol ul
+{
+    float: right;
+}
+
+#listTitleBar .rightCol ul li
+{
+    float: left;
+    margin-left: 15px;
+}
+
+#listTitleBar .rightCol a
+{
+    color: #333333;
+    text-decoration: none;
+}
+
+#listTitleBar .rightCol a:hover
+{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Repeated under title bar and fixed at bottom */
+.sectionAddRow
+{
+    font: bold 12px Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    _border: 1px solid white;
+}
+
+.sectionAddRow a
+{
+    background: #0b6a95 url(../img/icons/add.png) no-repeat 5px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 10px 5px 25px;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;    
+}
+
+.sectionAddRow a:hover
+{
+    background-color: #d44a08;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Icon links common properties */
+a.iconLink
+{
+    background-repeat: no-repeat;
+    background-position: 0;
+	padding: 0 0 0 20px;
+}
+
+a#printLink
+{
+    background-image: url(../img/icons/printer.png);
+}
+
+a#helpLink
+{
+    background-image: url(../img/icons/help.png);
+}
+
+#moreActionsDropDown
+{
+}
+
+/* Content */
+
+#content
+{
+    min-height: 450px;
+}
+
+/* Bottom panel */
+
+#bottomPanel
+{
+	background: #ffffff;
+	border: 1px solid #0b6a95;
+	border-bottom: none;
+	bottom: 0;
+	position: fixed;
+	z-index: 9999;
+
+    display: none;
+}

@@ -1,0 +1,159 @@
+﻿/* CSS for home page */
+
+/* Main section */
+
+#homeSection1
+{
+    background: url(../img/home/img-main.png) no-repeat;
+    float: left;
+    width: 940px;
+    height: 357px;
+}
+
+#homeHeadline2
+{
+    color: #4c4c4c;
+    font: 18px/20px Georgia, serif;
+    top: 205px;
+    left: 516px;
+    width: 260px;
+    position: absolute;    
+}
+
+#btnSignUp
+{
+    background: url(../img/home/btn-signup.gif) no-repeat;
+    display: block;
+    width: 160px;
+    height: 28px;
+    top: 276px;
+    left: 516px;
+    position: absolute;
+    text-indent: -9999px;
+}
+
+#btnSignUp:hover
+{
+    background-position: 0px -28px;
+}
+
+/* 2nd section */
+
+#homeSection2
+{
+    background-color: #0e8dc6;
+    float: left;
+    height: 337px;
+}
+
+#homeSection2 a
+{
+    font-weight: bold;
+}
+
+#homeSection2 h2
+{
+    display: none; /* titles are images so hide text */
+}
+
+#homeSection2col1,
+#homeSection2col2,
+#homeSection2col3
+{
+    width: 300px;
+    height: 317px;
+}
+
+#homeSection2col1
+{
+    background: url(../img/home/background-column-left.png) no-repeat;
+    margin: 10px 5px 10px 10px;
+}
+
+#homeSection2col1 .rowA,
+#homeSection2col1 .rowB,
+#homeSection2col1 .rowC
+{
+    left: 19px;
+    width: 190px;
+    position: absolute;
+}
+
+#homeSection2col1 .rowA
+{
+    top: 40px;
+}
+
+#homeSection2col1 .rowB
+{
+    top: 149px;
+}
+
+#homeSection2col1 .rowC
+{
+    top: 243px;
+}
+
+#homeSection2col2
+{
+    background: url(../img/home/background-column-middle.png) no-repeat;
+    margin: 10px 5px 10px 5px;
+}
+
+#homeSection2col2 .innerContainer
+{
+    top: 40px;
+    left: 10px;
+    width: 280px;
+    position: absolute;
+}
+
+#homeSection2col2 .quoteContainer
+{
+    background: url(../img/home/quote-left.png) no-repeat left top;
+    padding: 10px 0 10px 20px;
+}
+
+#homeSection2col2 .quoteText
+{
+    background: url(../img/home/quote-right.png) no-repeat right bottom;
+    color: #4c4c4c;
+    font: 16px/22px Georgia, serif;
+    font-style: italic;
+    padding: 0 20px 10px 0;
+}
+
+#homeSection2col2 .quoteAuthor
+{
+    color: #006699;
+    font: 12px Georgia, serif;
+    font-style: normal;
+    text-align: right;
+}
+
+#homeSection2col3
+{
+    background: url(../img/home/background-column-right.png) no-repeat;
+    margin: 10px 10px 10px 5px;
+}
+
+#homeSection2col3 .innerContainer
+{
+    top: 40px;
+    left: 19px;
+    width: 262px;
+    position: absolute;
+}
+
+#homeSection2col3 ul
+{
+    margin-left: 0;
+    padding-left: 1em;
+    padding-top: 1em;
+	text-indent: -0.9em;
+}
+
+#homeSection2col3 ul li
+{
+    padding-bottom: 1em;
+}

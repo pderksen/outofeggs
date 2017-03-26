@@ -1,0 +1,178 @@
+﻿/* Base CSS for all pages (except print) */
+
+body
+{
+    background: #a0dbf5 url(../img/misc/background-main.jpg) repeat-x;
+	color: #333333;
+	font: 11px/14px Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    color: #ff6600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover
+{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Header */
+
+#logo
+{
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+#logo a
+{
+    background: url(../img/misc/logo-main.png) no-repeat;
+    float: left;
+    width: 214px;
+    height: 55px;
+    text-indent: -9999px;
+}
+
+/* Top nav */
+
+#topNavContainer
+{
+    color: #ffffff;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+#topNavContainer a
+{
+    color: #ffffff;
+    padding: 3px 0;
+    text-decoration: none;
+}
+
+#topNavContainer a:hover
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#topNavLeft
+{
+    float: left;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+#topNavUnderlay
+{
+	background: url(../img/misc/login-account-underlay.png) no-repeat;
+    float: left;
+    width: 162px;
+    height: 35px;
+    text-align: center;
+}
+
+#topNavUnderlay p
+{
+    padding: 10px;
+}
+
+a#loginLink
+{
+    color: #66ccff;
+    font-weight: bold;
+    padding: 3px 0;
+    text-decoration: none;    
+}
+
+a#loginLink:hover
+{
+    color: #66ccff;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+#footer
+{
+    color: #003366;
+    font: 12px Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+#footer a
+{
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer a:hover
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#footerNavLeft
+{
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#footerNavRight
+{
+    text-align: right;
+    vertical-align: middle;
+}
+
+#footerNavRight a.hasIcon
+{
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    margin-left: 25px;
+	padding: 5px 0 5px 30px;
+}
+
+#footerNavRight a.facebook
+{
+    background-image: url(../img/icons/facebook24.png);
+}
+
+#footerNavRight a.twitter
+{
+    background-image: url(../img/icons/twitter24.png);
+}
+
+#footerBottom
+{
+    border-top: 1px dotted #8ac2da;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#copyright
+{
+    color: #003366;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 5px 0 15px 0;
+}
+
+/* Headings */
+
+h1 { font-size: 25px; }
+h2 { font-size: 23px; }
+h3 { font-size: 21px; }
+h4 { font-size: 19px; }
+h5 { font-size: 17px; }
+h6 { font-size: 15px; }
+
+h1,h2,h3,h4,h5,h6 { margin-bottom: 20px; }

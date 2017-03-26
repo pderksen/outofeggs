@@ -1,0 +1,71 @@
+﻿/* CSS for bare bones printing of lists */
+
+body
+{
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+h2
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+a
+{
+	color: #cd802a;
+	text-decoration: underline;
+}
+
+a:hover
+{
+    color: #50473e;
+}
+
+/* Override fluid960's margin and padding for top level container */
+.fullWidth
+{
+    margin: 0;
+    width: 100%;
+}
+
+#printNavLinkBox,
+#printNavLinkBox2
+{
+    /* font-size: 16px; */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#printFooter
+{
+    margin: 0;
+    text-align: center;
+}
+
+ul.itemList
+{
+    /* font-size: 12px; */
+    font-size: 11px;
+    list-style-type: none;
+    /* line-height: 1; */
+    line-height: 0.9;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+/* Checkbox symbol */
+ul.itemList li .bullet
+{
+    font-size: 20px;
+}
+
+/* Blank line */
+ul.itemList li .blankLine
+{
+    border-bottom: 1px solid #000000;
+    margin-left: 17px;
+    width: 85%;
+}

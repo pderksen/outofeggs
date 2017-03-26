@@ -1,0 +1,430 @@
+﻿/* Base CSS for all pages (except print and mobile) */
+
+/*
+=== Color Scheme ===
+
+Blue page background top: #0279a8
+Blue page background bottom: #7bc5df (light blue)
+
+Orange button top/light: RGB(255,102,0) - #ff6600
+Orange button bottom/dark: RBG(205,52,0) - #cd3400
+Orange button (middle-ish): #e74e00
+
+Dark blue section header top/light: RGB(0,153,255) - #0099ff
+Dark blue section header bottom/dark: RGB(0,103,205) - #0067cd
+[Above seems wrong - Eye dropper gives:]
+top/light: #1f6799
+bottom/dark: #15476a
+middle-ish: #0b6a95
+
+Orange links: #ff6600
+Bright blue login link: #00eeff
+Subtle blue footer text/divider: #64a5bc
+Dark blue copyright text: #003366
+
+Light gray section background bottom: rgb(237, 237, 237) - #ededed
+(top is white)
+
+[My additions]
+Light orange - item hover: #ffcc66
+Light blue - item placeholder: #ccffff
+*/
+
+body
+{
+    background: #7bc5df url(../img/misc/gradient-tile.png) repeat-x;
+    color: #333333;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+}
+
+a
+{
+    color: #ff6600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover
+{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Misc */
+/* TODO reformatting of flash/status messages */
+
+.flashMsg
+{
+    background-color: #f5f5b5;
+    color: #333333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 3px 10px;
+    width: auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;    
+}
+
+.flashMsg a.closeBtn
+{
+    margin-left: 5px;
+    padding: 3px 5px;
+}
+
+.statusMsg
+{
+    color: Red;
+    font-weight: bold;
+}
+
+/* Header */
+
+#logo
+{
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+#logo a
+{
+    background: url(../img/misc/logo-main.png) no-repeat;
+    float: left;
+    width: 214px;
+    height: 55px;
+    text-indent: -9999px;
+}
+
+/* Top nav */
+
+#topNavContainer
+{
+    color: #ffffff;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+#topNavContainer a
+{
+    color: #ffffff;
+    padding: 3px 0;
+    text-decoration: none;
+}
+
+#topNavContainer a:hover
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#topNavLeft
+{
+    float: left;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+#topNavUnderlay
+{
+	background: url(../img/misc/login-account-underlay.png) no-repeat;
+    float: left;
+    font-weight: bold;
+    width: 162px;
+    height: 35px;
+    text-align: center;
+}
+
+#topNavUnderlay p
+{
+    padding: 10px;
+}
+
+a#loginLink
+{
+    color: #00eeff;
+    font-weight: bold;
+    padding: 3px 0;
+    text-decoration: none;    
+}
+
+a#loginLink:hover
+{
+    color: #00eeff;
+    text-decoration: underline;
+}
+
+/* Main nav (common) */
+
+#mainNavContainer
+{
+    float: right;
+    padding: 50px 0 10px 0;
+}
+
+#mainNavAuth li,
+#mainNavNotAuth li
+{
+    float: left;
+}
+
+#mainNavAuth li a,
+#mainNavNotAuth li a
+{
+    display: block;
+    height: 28px;
+    margin-left: 24px;
+    text-indent: -9999px; /* hide text links */
+}
+
+/* Main nav (auth only) */
+
+#mainNavAuth li a
+{
+    background-image: url(../img/list/nav-list.png);
+    background-repeat: no-repeat;
+}
+
+#mainNavYourLists a
+{
+    background-position: 0px 0px;
+    width: 101px;
+}
+
+#mainNavYourLists a:hover
+{
+    background-position: 0px -28px;
+}
+
+#mainNavTopListsAuth a
+{
+    background-position: -125px 0px;
+    width: 168px;
+}
+
+#mainNavTopListsAuth a:hover
+{
+    background-position: -125px -28px;
+}
+
+/* Main nav (not auth only) */
+
+#mainNavNotAuth li a
+{
+    background-image: url(../img/home/nav-main.png);
+    background-repeat: no-repeat;
+}
+
+#mainNavRegister a
+{
+    background-position: 0px 0px;
+    width: 145px;
+}
+
+#mainNavRegister a:hover
+{
+    background-position: 0px -28px;
+}
+
+#mainNavTopListsNotAuth a
+{
+    background-position: -169px 0px;
+    width: 170px;
+}
+
+#mainNavTopListsNotAuth a:hover
+{
+    background-position: -169px -28px;
+}
+
+#mainNavTour a
+{
+    background-position: -363px 0px;
+    width: 125px;
+}
+
+#mainNavTour a:hover
+{
+    background-position: -363px -28px;
+}
+
+#mainNavBlog a
+{
+    background-position: -512px 0px;
+    width: 58px;
+}
+
+#mainNavBlog a:hover
+{
+    background-position: -512px -28px;
+}
+
+/* Footer */
+
+#footer
+{
+    color: #64a5bc;
+    font: 12px Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+#footer a
+{
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer a:hover
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#footerNavLeft
+{
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#footerNavRight
+{
+    text-align: right;
+    vertical-align: middle;
+}
+
+#footerNavRight a.hasIcon
+{
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    margin-left: 25px;
+	padding: 5px 0 5px 30px;
+}
+
+#footerNavRight a.facebook
+{
+    background-image: url(../img/icons/facebook24.png);
+}
+
+#footerNavRight a.twitter
+{
+    background-image: url(../img/icons/twitter24.png);
+}
+
+#footerBottom
+{
+    border-top: 1px dotted #64a5bc;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#copyright
+{
+    color: #003366;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 10px 0 15px 0;
+}
+
+/* Default headings */
+
+h1 { font-size: 25px; }
+h2 { font-size: 23px; }
+h3 { font-size: 21px; }
+h4 { font-size: 19px; }
+h5 { font-size: 17px; }
+h6 { font-size: 15px; }
+
+h1,h2,h3,h4,h5,h6 { margin-bottom: 20px; }
+
+/* Default form elements */
+
+label
+{
+    display: inline-block;
+    font: 12px Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    text-align: right;
+}
+
+label.checkBoxLabel
+{
+    padding-left: 3px;
+    width: auto;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea
+{
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],
+input[type="password"],
+textarea
+{
+    padding: 2px;
+}
+
+/* Variation of super awesome buttons
+http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba
+*/
+
+.awesome
+{
+	background:  #e74e00 url(alert-overlay.png) repeat-x;
+	border: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	color: #fff; 
+	cursor: pointer;
+	display: inline-block; 
+	font: bold 13px/1 Arial, Helvetica, sans-serif;
+	padding: 5px 10px 6px 10px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.awesome:hover
+{
+    background-color: #d45500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.awesome:active
+{
+    top: 1px;
+}
+
+.small.awesome
+{
+    font-size: 12px;
+}
+
+a.small.awesome
+{
+    padding: 5px 10px 4px 10px; /* padding for <a> tag */
+}
+
+button.small.awesome
+{
+    padding: 2px 7px; /* padding for <button> tag */
+}
+
+    

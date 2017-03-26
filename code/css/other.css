@@ -1,0 +1,378 @@
+﻿/* CSS for all other pages (not home, list or print) */
+
+/* Misc */
+
+#btnSignUp
+{
+    background: url(../img/home/btn-signup.gif) no-repeat;
+    display: block;
+    width: 160px;
+    height: 28px;
+    text-indent: -9999px;
+}
+
+#btnSignUp:hover
+{
+    background-position: 0px -28px;
+}
+
+.lightBorder
+{
+    border: 1px solid #cccccc;
+}
+
+.signUpFooter
+{
+    text-align: center;
+}
+
+.signUpFooter
+{
+    padding: 10px 0;
+}
+
+.signUpFooter span,
+.stepHeader span
+{
+    background-color: #0b6a95;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;
+    width: auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.signUpFooter span a
+{
+    color: #00eeff;
+    text-decoration: underline;
+}
+
+.signUpFooter span a:hover
+{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+.userLists
+{
+    margin-bottom: 20px;
+}
+
+.userLists li
+{
+    margin-bottom: 7px;
+}
+
+.userLists li a
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Content */
+
+#contentOther
+{
+    background-color: #ffffff;
+    display: inline-block;
+    min-height: 500px;
+    width: 940px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#contentOther
+{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#contentOther p
+{
+    margin-bottom: 16px;
+}
+
+#contentOther h2
+{
+    font-size: 20px;
+}
+
+#contentOther h3
+{
+    font-size: 16px;
+}
+
+#contentHeader
+{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Remove pixels from widths of grid columns since these are inner divs */
+#contentOther .grid_12
+{
+    width: 920px; /* originally 940px */
+}
+
+#contentOther .grid_6
+{
+    width: 450px; /* originally 460px */
+}
+
+#contentOther .grid_3
+{
+    width: 215px; /* originally 220px */
+}
+
+/* Common form */
+
+.formCommon label,
+.formCommon input[type="text"],
+.formCommon input[type="password"],
+.formCommon select,
+.formCommon textarea,
+.formCommon .checkBoxLabel
+{
+}
+
+/* Default form label width */
+.formCommon label
+{
+    width: 150px;
+}
+
+.formCommon .checkBoxLabel
+{
+    width: auto;
+}
+
+.formCommon .textAreaLabel
+{
+    vertical-align: top;
+}
+
+.formCommon input[type="text"],
+.formCommon input[type="password"],
+.formCommon select
+{
+    width: 200px;
+}
+
+.formCommon textarea
+{
+    width: 300px;
+    height: 100px;
+}
+
+/* Forms where input fields are on new lines (not same as labels) */
+.formNewLines label
+{
+    display: block;
+    margin: 0;
+    text-align: left;
+    width: auto;    
+}
+
+/* Create new list form */
+.formNewList label
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formNewList label span
+{
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.formNewList input[type="text"],
+.formNewList textarea
+{
+    width: 300px;
+}
+
+.formNewList textarea
+{
+    height: 150px;
+}
+
+/* Other form options */
+
+.label75w label
+{
+    width: 75px;
+}
+
+.label100w label
+{
+    width: 100px;
+}
+
+.label125w label
+{
+    width: 125px;
+}
+
+/* Validation */
+
+.validation-summary-errors
+{
+    color: Red;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input.input-validation-error,
+select.input-validation-error,
+textarea.input-validation-error
+{
+    border: 1px solid Red;
+}
+
+.field-validation-error
+{
+    color: Red;
+    font-weight: bold;
+}
+
+/* Recent blog posts/tweets boxes */
+
+.postsAndTweetsBox
+{
+    background-color: #dddddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.postsAndTweetsBox h3
+{
+    background-repeat: no-repeat;
+    background-position: 0;
+    margin-bottom: 15px;
+	padding: 5px 0 5px 30px;
+}
+
+.postsAndTweetsBox h3.twitter
+{
+    background-image: url(../img/icons/twitter24.png);
+}
+
+.postsAndTweetsBox h3.rss
+{
+    background-image: url(../img/icons/feed24.png);
+}
+
+.postsAndTweetsBox li
+{
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.postsAndTweetsBox a
+{
+    font-weight: bold;
+}
+
+div.feedburnerFeedBlock span.headline
+{
+    display: block;
+}
+
+div.feedburnerFeedBlock ul li div
+{
+    display: inline;
+}
+
+div.feedburnerFeedBlock p.date
+{
+    color: #666666;
+    display: inline;
+    margin-left: 10px;
+}
+
+/* Tour */
+/* Uses jQuery Tools Scrollable -- http://flowplayer.org/tools/scrollable.html */
+
+#tourNav
+{
+    margin-bottom: 15px;
+    text-align: center;
+    width: 920px;
+}
+
+#tourNav a.awesome
+{
+    text-align: center;
+    width: 90px;
+}
+
+#tourPane
+{
+    clear: both;
+    height: 300px;
+    width: 860px;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    position: relative;
+
+    border: 1px solid #cccccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#tourPane .items
+{
+    clear: both; 
+    margin: 0; 
+    padding: 0;
+    position: absolute; 
+    width: 20000em; 
+}
+
+#tourPane .items .step
+{
+    display: block;
+    float: left;
+    margin: 10px;
+}
+
+.stepHeader
+{
+    padding-bottom: 5px;
+}
+
+.stepText
+{
+    float: left;
+    margin: 0 10px 0 0;
+    position: relative;
+    width: 220px;
+}
+
+.stepPic
+{
+    float: left;
+    margin: 0 0 0 10px;
+    position: relative;
+    height: 280px;
+    width: 600px;
+}
+
+.stepPic img
+{
+    border: 1px solid #cccccc;
+}

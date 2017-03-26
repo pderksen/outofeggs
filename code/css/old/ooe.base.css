@@ -1,0 +1,452 @@
+﻿/* CSS base for all pages (except print) */
+
+/* === Hide marketing === */
+#homePageLeftCol,
+#homePageRightCol,
+#homePageStepGroup,
+.listCornerImage1,
+.registerSmall
+{
+    /*visibility: hidden;*/
+}
+
+/* Base */
+
+body
+{
+	background-color: #ffffff;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+a
+{
+	color: #cd802a;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+a:hover
+{
+    color: #50473e;
+    text-decoration: underline;    
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    color: #666666;
+}
+
+h1
+{
+	font-size: 20px;
+    font-weight: bold;
+}
+
+h2
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+h3
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h4
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h5
+{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+h6
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+p,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+address,
+fieldset
+{
+	margin-bottom: 10px; /* originally 20px */
+}
+
+/* Generic font sizes */
+
+.font-smaller
+{
+    font-size: 9px;
+}
+
+.font-small
+{
+    font-size: 10px;
+}
+
+.font-medium
+{
+    font-size: 12px;
+}
+
+.font-large
+{
+    font-size: 14px;
+}
+
+.font-XL
+{
+    font-size: 16px;
+}
+
+.font-XXL
+{
+    font-size: 18px;
+}
+
+.font-XXXL
+{
+    font-size: 20px;
+}
+
+.red
+{
+    color: Red;
+}
+
+/* Header Navigation */
+
+#headerTopNav
+{
+    background-color: #eceadb;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    padding: 5px 10px;
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+#headerTopNav > span
+{
+    padding: 0 0 0 15px;
+}
+
+#headerTopNav > span > a
+{
+    text-decoration: none;
+}
+
+#headerTopNav > span > a:hover
+{
+    text-decoration: underline;
+}
+
+#headerTopNav .first
+{
+    padding: 0;
+}
+
+#headerTopNav .nonLink
+{
+    font-weight: bold;
+}
+
+#headerTopNav td
+{
+    vertical-align: middle;
+}
+
+#headerTopNavLeft
+{
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+    padding: 7px 10px 0 0;
+}
+
+#headerTopNavLeft > a
+{
+    text-decoration: none;
+}
+
+#headerTopNavLeft > a:hover
+{
+    text-decoration: underline;
+}
+
+/* Logo (HTML for now) */
+
+.logoMain
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logoMain a
+{
+    text-decoration: none;
+}
+
+.logoMain .logoText1,
+.logoMain .logoText3
+{
+    color: #50473e;
+}
+
+.logoMain .logoText2
+{
+    color: #cd802a;
+}
+
+.logoTextDev
+{
+    color: Red;
+}
+
+.logoTextTest
+{
+    color: #cd802a;
+}
+
+/* HTML logo on main page */
+.logoLarge
+{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+/* HTML logo on list page (smaller) */
+.logoMedium
+{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    line-height: 28px;
+}
+
+/* Footer */
+
+#footerMain
+{
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#navBottom li
+{
+    display: inline;
+    padding-right: 15px;
+}
+
+#navBottom li.last
+{
+    padding-right: 0;
+}
+
+#navBottom > li > a.hasIcon
+{
+    background-repeat: no-repeat;
+    background-position: 0;
+	padding: 0 0 0 22px;
+}
+
+#navBottom > li > a.facebook
+{
+    background-image: url(images/facebook16.png);
+}
+
+#navBottom > li > a.twitter
+{
+    background-image: url(images/twitter16.png);
+}
+
+/*
+=== Button CSS ===
+
+Should work for <a> or <button> html
+
+Color variations:
+Button 1: Same backgrounds orange as section headers w/ slightly darker hover bg, white text.
+Button 2: Light yellow w/ border and dark text.
+Button 3: Green w/ dark green hover and white text. Stands out for sign up button and others.
+*/
+.colorBtn,
+.colorBtn2,
+.colorBtn3
+{
+    background-color: #cd802a;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 3px;
+    text-decoration: none;
+    /* from jquery ui-corner-all class */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.colorBtn:hover,
+.colorBtn2:hover,
+.colorBtn3:hover
+{
+    background-color: #50473e;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.colorBtn2
+{
+    background-color: #f9f9d6;
+	border: 1px solid #d9bb73;
+	color: #060200;
+}
+
+.colorBtn2:hover
+{
+    background-color: #f9f9d6;
+    text-decoration: underline;
+}
+
+.colorBtn3
+{
+    background-color: #459e00;
+	border: 1px solid #327e04;
+	color: #ffffff;
+}
+
+.colorBtn3:hover
+{
+    background-color: #67b021;
+}
+
+/* Adjust size with additional class */
+
+.smallBtn
+{
+    font-size: 11px;
+    line-height: 1;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;    
+}
+
+/* Slight differences in padding in link vs button */
+a.smallBtn
+{
+    padding: 4px 6px;
+}
+
+button.smallBtn
+{
+    padding: 2px 4px;
+}
+
+.loginBtn
+{
+    margin-left: 3px;
+}
+
+/* Misc */
+
+.divider
+{
+    border-top: 1px dotted #999999;
+    margin: 20px 0;
+}
+
+a.largeLink
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.flashMsg
+{
+    background-color: #f5f5b5;
+    color: #333333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 3px 10px;
+    width: auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;    
+}
+
+.flashMsg a.closeBtn
+{
+    margin-left: 5px;
+    padding: 3px 5px;
+}
+
+.attnMsg
+{
+    background-color: #f5f5b5;
+    color: #333333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 3px 10px;
+    width: auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;  
+}
+
+.attnMsg a
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.attnMsg a:hover
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Add on to existing .attnMsg */
+.attnMsgRed
+{
+    background-color: #F3D8D8;
+    border: 1px solid #CC0000;
+    color: #2E2E2E;
+}
+
+.attnMsgRed a
+{
+    color: #CC0000
+}
+
+.attnMsgRed a:hover
+{
+    color: red;
+}

@@ -1,0 +1,390 @@
+﻿/* CSS for list page */
+
+/* Base */
+
+body
+{
+	font-size: 11px;
+}
+
+/* List header 2nd row */
+
+table#listHeader2
+{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#listHeader2 td
+{
+    vertical-align: top;
+}
+
+#listHeader2 .leftCol
+{
+    vertical-align: middle;
+    width: 33%;
+}
+
+#listHeader2 .middleCol
+{
+    text-align: center;
+    vertical-align: middle;
+    width: 34%;
+}
+
+#listHeader2 .rightCol
+{
+    vertical-align: middle;
+    width: 33%;
+}
+
+.listTitle h1
+{
+    float: left;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.listTitle h1 .indicatorText
+{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+a#listRenameLink
+{
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.listEditCtrls a
+{
+    font-size: 11px;
+    margin-left: 8px;    
+}
+
+.listEditCtrls input
+{
+    width: 200px;
+}
+
+.listHeader2Nav
+{
+    float: right;
+}
+
+.listHeader2Nav li > a
+{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.listHeader2Nav li > a:hover
+{
+    text-decoration: underline;
+}
+
+.listHeader2Nav > ul
+{
+    list-style: none;
+    position: relative;
+}
+
+.listHeader2Nav > ul > li
+{
+    float: left;
+    margin-left: 15px;
+}
+
+/* Icon links common properties */
+a.iconLink
+{
+    background-repeat: no-repeat;
+    background-position: 0;
+	padding: 0 0 0 20px;
+}
+
+a.printLink
+{
+    background-image: url(famfam/printer.png);
+}
+
+a.helpLink
+{
+    background-image: url(http://cdn.outofeggs.com/icons/famfam/help.png);
+}
+
+/* Sections */
+
+.secBox
+{
+	border: 1px solid #e0cfc2;
+    background-color: #eceadb;
+    margin-bottom: 20px;
+    width: 100%;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;    
+}
+
+.secBoxPlaceholder 
+{ 
+	border: 1px dotted #e0cfc2;
+    background-color: #FFFFCC;
+	height: 50px;
+	margin-bottom: 20px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;	
+}
+
+.secHeader 
+{
+	background-color: #cd802a;
+	margin: 2px;
+	min-height: 1.5em;
+	overflow: hidden;
+	padding: 3px 4px;
+	position: relative;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;	
+}
+
+.secHeaderSortable:hover 
+{
+    cursor: move;
+}
+
+.secName 
+{
+	color: #ffffff;
+    float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	width: 150px;
+}
+
+.secToolbar
+{
+    display: none; /* Start off hidden */
+    float: right;
+    right: 0.5em;
+    /* Toolbar buttons should hover over long text.
+    .secToolbar should have position: absolute.
+    .secHeader should have position: relative. */
+    position: absolute;
+}
+
+.secToolbar a
+{
+    border: 1px solid #cd802a;
+    color: #c5c1a3;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 8px;
+    padding: 1.2px 4px;
+    text-decoration: none;
+}
+
+.secToolbarHeaderHover a
+{
+    color: #ffffff;
+}
+
+.secToolbar a:hover
+{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.secEditCtrls
+{
+    width: 100%;
+}
+
+.secEditCtrls input
+{
+    font-size: 12px;
+    width: 110px;
+}
+
+#sectionAddLabel
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sectionAddLinkBox a
+{
+	padding: 4px 12px;
+    text-decoration: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;	
+}
+
+/* Items */
+
+.itemList 
+{
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    min-height: 10px;
+}
+
+.itemRow
+{
+    margin: 0;
+    padding: 1px 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.addItemText
+{
+    font-weight: bold;
+    margin: 0;
+    padding: 1px 5px;
+}
+
+.itemRowSortable:hover
+{
+    cursor: move;
+    background-color: #D6D4C1;
+}
+
+.itemRowPlaceholder
+{
+    border: 1px dotted #000000;
+    background-color: #FFFFCC;
+    height: 1.5em;
+    margin-left: 0;
+}
+
+.itemName
+{
+    float: left;
+	font-weight: bold;
+	width: 100%;
+}
+
+/* Alternate section/item edit form */
+
+.secFormBox
+{
+    display: none; /* Start off hidden */
+}
+
+.secFormBox form
+{
+    padding: 5px;
+    font-size: 11px;
+}
+
+.secFormBox fieldset
+{
+    margin-bottom: 0;
+}
+
+.secFormBox label
+{
+    display: block;
+    font-size: 11px;
+    text-align: left;
+}
+
+.secFormBox input[type="text"],
+.secFormBox textarea
+{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 2px;
+    width: 200px;
+}
+
+.secFormBox textarea#itemNames
+{
+    min-height: 150px;
+    max-height: 250px;
+}
+
+.secFormBox a.secCancel
+{
+    font-weight: bold;
+    padding: 2px;
+}
+
+.secEditButtonRow span
+{
+    font-weight: bold;
+    padding: 4px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+/* List help area */
+#listHelpBox
+{
+    display: none; /* Start off hidden */
+    text-align: center;
+}
+
+.listHelpOuter
+{
+    background-color: #f5f5b5;
+    color: #333333;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 370px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.listHelpInner
+{
+    padding: 3px 10px;
+    text-align: left;
+}
+
+.listHelpInner > div
+{
+    text-align: center;
+    padding: 5px;
+}
+
+/* Misc */
+
+#listContent,
+.listColumn
+{
+    min-height: 300px;
+}
+
+#renameListDialog
+{
+    cursor: default;
+    display: none; /* Start off hidden */
+    margin-top: 10px;
+}
+
+#renameListDialog input#listName
+{
+    font-size: 16px;
+    width: 200px;
+}
+
+#renameListDialog .buttonRow > span
+{
+    color: #666666;
+    font-size: 12px;
+}
